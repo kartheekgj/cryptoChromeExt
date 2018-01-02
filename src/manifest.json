@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crpto price checker",
+  "description": "This extension will get data from Koinex API",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "./icons/XRP.png",
+   "default_popup": "koinex.html"
+  },
+  "permissions": ["activeTab","notifications"]
+}

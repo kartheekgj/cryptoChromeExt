@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Crypto price checker</title>
+    <style>
+    	.btnCheck{    	  
+			  position: relative;
+			  display: inline-block;
+			  margin: 0;
+			  background: #414;
+			  color: #eee;
+			  font-family: inherit;
+			  font-size: 1rem;
+			  font-weight: 100;
+			  line-height: normal;
+			  border: 0;
+			  border-radius: 0.4rem;
+			  -webkit-box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
+			          box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
+			  -webkit-appearance: none;
+			     -moz-appearance: none;
+			          appearance: none;
+			  cursor: pointer;
+			  -webkit-transition: background 250ms, -webkit-box-shadow 250ms;
+			  transition: background 250ms, -webkit-box-shadow 250ms;
+			  transition: background 250ms, box-shadow 250ms;
+			  transition: background 250ms, box-shadow 250ms, -webkit-box-shadow 250ms;
+			}
+			.btnCheck:hover {
+			  -webkit-box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+			          box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+			}
+			.btnCheck:active, .btnCheck:focus {
+			  outline: none;
+			}
+			.btnCheck:active {
+			  -webkit-box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.8);
+			          box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.8);
+			}
+    </style>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="koinex.js"></script>
+  </head>
+  <body>
+  	<div style="width:300px;">
+  		<h1 style="padding-bottom: 2px;">Crypto Price checker</h1>
+  		<div style="padding-bottom: 2px;">
+  			<label>Select Market:</label>
+			<select id="color" >
+				<option value="XRP">Ripple</option>
+				<option value="BTC">BitCoin</option>
+				<option value="ETH">Etherium</option>
+				<option value="LTC">LiteCoin</option>
+				<option value="MIOTA">IOTA</option>
+				<option value="ALL">All</option>
+			</select>
+  		</div>
+	    <button id="checkPage" class="btnCheck" style="padding-bottom: 2px;padding-top: 2px;">Check Now!</button>	
+  	</div>
+ 
+  </body>
+</html>
