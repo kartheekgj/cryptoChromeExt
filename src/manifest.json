@@ -7,7 +7,7 @@
 
   "browser_action": {
    "default_icon": "./icons/XRP.png",
-   "default_popup": "koinex.html"
+   "default_popup": "crypt.html"
   },
   "permissions": ["activeTab","notifications"]
 }
